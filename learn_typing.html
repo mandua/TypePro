@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Learn Typing - TypePro</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link href="learn_typing.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <!--Header-->
+    <header id="header">
+      <span class="material-icons" onclick="window.location.href = 'index.html';">home</span>
+      <h3>Learn Typing</h3>
+    </header>
+    <!--Content-->
+    <div id="warning-modal">
+      <div id="modal-content">
+        <div id="modal-header">
+          <h2>WOAH! HOLD UP</h2>
+        </div>
+        <div class="modal-body">
+          <p>We've detected that you're on a phone/tablet... we kindly ask you to switch to a laptop/computer as you can learn and type properly there.</p>
+        </div>
+        <div id="modal-footer">
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+    <div id="dark-theme-btn">
+      <span class="material-icons" onclick="toggleDarkTheme();">dark_mode</span>
+    </div>
+    <main>
+      <p id="beginning">Let's learn some typing!<br><small>(click here to begin)</small></p>
+      <script>
+        document.querySelector("main").addEventListener("click", () => {
+          document.getElementById("beginning").style.display = "none";
+          document.getElementById("learning-slideshow").style.display = "block";
+          document.getElementById("dots-container").style.display = "block";
+        });
+      </script>
+      <div id="learning-slideshow" style="display: none;">
+        <!--Intro-->
+        <div class="learn-section">
+          <div class="current-lesson-num"></div>
+          <div class="actual-lesson">
+            <h1>Intro</h1>
+            <p style="font-size: 3.5vh;">Typing requires some basic things, such as posture, finger placement, hand-eye coordination, and etc.</p>
+            <br>
+            <h2>Posture</h2>
+            <p>Posture means sitting up straight in your chair, not leaning or anything - that affects your typing speed!</p>
+            <img src="https://www.cmd-ltd.com/wp-content/uploads/2020/02/posture.jpg" alt="An image of a person's posture while typing">
+            <br>
+            <h2>Finger placement</h2>
+            <p>Your fingers should be in the correct typing placement whenever you're at the keyboard (shown below) (for a QWERTY keyboard)</p>
+            <img src="https://i.ytimg.com/vi/nTknHArU1L8/hqdefault.jpg" alt="A person's finger placement while typing">
+            <br>
+            <strong>Do NOT do any other typing placement with your fingers, such as hunting and pecking!</strong>
+            <br><br>
+            <h2>Hand-eye coordination</h2>
+            <p>Hand-eye coordination is essential for typing, because you need to be able to see the screen while typing WITHOUT looking down at your keyboard. This is because looking down at your keyboard not only slows down your typing speed, but it also affects your fingering and your accuracy takes a dip.</p>
+            <img src="https://theqna.org/wp-content/uploads/2021/02/build-your-focus-improve-your-typing-speed-1.jpg" alt="Image of how your hand-eye coordination should be while typing.">
+            <br>
+            <h2>Now that you're in the setup, put your hands in the typing position and feel around, get a good grip.</h2>
+            <p>Once you're done with that, start practicing a few basic typing texts!</p>
+            <small>Left hand</small>
+            <br><br>
+            <code>dadf sad fasfs dss dsaa sfaf sa fafd fa fdsa fdasf</code>
+            <br><br>
+            <input type="text" onpaste="return false;" ondrop="return false;" autocomplete="off">
+            <p class="result"></p>
+            <br><br>
+            <small>Right hand</small>
+            <br><br>
+            <code>j;; lk kk;kj ;lk k;k ;jl; klj; kkjkj jk;ll ;jk</code>
+            <br><br>
+            <input type="text" onpaste="return false;" ondrop="return false;" autocomplete="off">
+            <p class="result"></p>
+            <br><br>
+            <small>Now, both!</small>
+            <br><br>
+            <code>ld klfj; ldd kla dsk f;fl kj laa dad asj ;adsa</code>
+            <br><br>
+            <input type="text" onpaste="return false;" ondrop="return false;" autocomplete="off">
+            <p class="result"></p>
+          </div>
+          <br><br>
+          <p>Once you feel comfortable enough, move on to the next lesson.</p>
+        </div>
+        <!--Space-->
+        <div class="learn-section">
+          <div class="current-lesson-num"></div>
+          <div class="actual-lesson">
+            <h1>The Space Bar</h1>
+            <p>The space bar is an important part of typing. It the the thing that seperates the words to improve readability. In the olden times, there was no space bar and words had no separation! Just imagine how hard that would be to read!</p>
+            <img src="https://media.istockphoto.com/photos/finger-pushing-space-bar-button-on-laptop-keyboard-picture-id820237952?k=20&m=820237952&s=612x612&w=0&h=-TdG3plKEWXePigBPoy36LZZPr6ZaTz7s-iQpMPHIik=">
+            <p>When you're typing, always use the space bar to seperate your words. To do this, you can type words slowly to make sure you always press the space bar. Then, slowly increase your speed so your typing speed is good and your accuracy is perfect!</p>
+            <h2>There's no practice for this lesson - just remember to use the space bar while typing to seperate words</h2>
+          </div>
+          <br><br>
+        </div>
+        <!--Home row-->
+        <div class="learn-section">
+          <div class="current-lesson-num"></div>
+          <div class="actual-lesson">
+            <h1>Home Row</h1>
+            <img src="https://qph.fs.quoracdn.net/main-qimg-9e39df5d8860bf64fa090fdc45047259">
+            <p>This is the home row in a standard QWERTY keyboard. It is where your fingers go automatically when you are not typing.</p>
+            <p>The fingering of the home row goes like this:</p>
+            <ul style="list-style-type: none;">
+              <li>Left pinky: A</li>
+              <li>Left ring finger: S</li>
+              <li>Left middle finger: D</li>
+              <li>Left index finger: F</li>
+              <li>Right index finger: J</li>
+              <li>Right middle finger: K</li>
+              <li>Right ring finger: L</li>
+              <li>Right pinky: ;</li>
+              <li>Both thumbs will always be on the space bar</li>
+            </ul>
+            <p>Once you've gotten your fingers in that position, start practicing!</p>
+            <br><br>
+            <code>asa asa ada ada afa afa aga aga aha aha aja aja aka aka ala ala a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a; sas sas sds sds sfs sfs sgs sgs shs shs sjs sjs sks sks sls sls s;s s;s l;l l;l lkl lkl ljl ljl lhl lhl lgl lgl lfl lfl ldl ldl lsl lsl lal lal dad dad dsd dsd dfd dfd dgd dgd dhd dhd dkd dkd dld dld d;d d;d</code>
+            <br><br>
+            <input type="text" onpaste="return false;" ondrop="return false;" autocomplete="off">
+            <p class="result"></p>
+          </div>
+          <br><br>
+        </div>
+        <!--Top row-->
+        <div class="learn-section">
+          <div class="current-lesson-num"></div>
+          <div class="actual-lesson">
+            <h1>Top Row</h1>
+            <img src="https://www.typinglounge.com/wp-content/uploads/2018/08/bottom-row-hand-position.jpg">
+            <p>This is the top row in a standard QWERTY keyboard. It is merely for more letters to type.</p>
+            <p>Top row fingering:</p>
+            <ul style="list-style-type: none;">
+              <li>Left pinky: Q</li>
+              <li>Left ring finger: W</li>
+              <li>Left middle finger: E</li>
+              <li>Left index finger: R and T</li>
+              <li>Right index finger: Y and U</li>
+              <li>Right middle finger: I</li>
+              <li>Right ring finger: O</li>
+              <li>Right pinky: P</li>
+              <li>Both thumbs will always be on the space bar</li>
+            </ul>
+            <br><br>
+            <p>Practice!</p>
+            <code>qwq qwq qrq qtq qeq qtq qtq qeq qyq qyq qyq quq qiq quq qiq qoq qpq qpq pqq pop pip pup pyp ptp pww pte pet per pit pot rwe wer ety upt uit uip uyo uwo uwu opo opp oop oip opt pew top otr</code>
+            <br><br>
+            <input type="text" onpaste="return false;" ondrop="return false;" autocomplete="off">
+            <p class="result"></p>
+          </div>
+          <br><br>
+        </div>
+        <!--Bottom row-->
+        <div class="learn-section">
+          <div class="current-lesson-num"></div>
+          <div class="actual-lesson">
+            <h1>Bottom Row</h1>
+            <img src="https://www.typinglounge.com/wp-content/uploads/2018/08/bottom-row-left-right-hand.jpg">
+            <p>This is the bottom row in a standard QWERTY keyboard. It is also for more letters to type, though it is the least commonly used row for typing.</p>
+            <p>Bottom row fingering:</p>
+            <ul>
+              <li>Left pinky: Z</li>
+              <li>Left ring finger: X</li>
+              <li>Left middle finger: C</li>
+              <li>Left index finger: V and B</li>
+              <li>Right index finger: N and M</li>
+              <li>Right middle finger: <</li>
+              <li>Right ring finger: ></li>
+              <li>Right pinky: /</li>
+              <li>Both thumbs will always be on the space bar</li>
+            </ul>
+            <br><br>
+            <p>Practice!</p>
+            <code>zcx zcv zbc znm z,. z/x zm, zc, z/. ,vn b.m ncx m,m ,.x vxc ,vn xnv xbv ,cn nmv nm, zxn b,c ,cm m,. m.. /// bzx</code>
+            <br><br>
+            <input type="text" onpaste="return false;" ondrop="return false;" autocomplete="off">
+            <p class="result"></p>
+          </div>
+          <br><br>
+        </div>
+        <!--All rows-->
+        <div class="learn-section">
+          <div class="current-lesson-num"></div>
+          <div class="actual-lesson">
+            <h2>All rows</h2>
+            <p>Now that you've learned about the rows of a typing keyboard, put it together and practice typing with ALL rows!</p>
+            <br><br>
+            <code>she such between book when other four sea all under each from call same here we now sea enough black where run being upon read came into every just an study being use show when in your as than answer came study each once until point call</code>
+            <br><br>
+            <input type="text" onpaste="return false;" ondrop="return false;" autocomplete="off">
+            <p class="result"></p>
+          </div>
+          <br><br>
+        </div>
+        <!--Numbers/symbols-->
+        <div class="learn-section">
+          <div class="current-lesson-num"></div>
+          <div class="actual-lesson">
+            <h1>Numbers and symbols</h1>
+            <p>Numbers and symbols are also important in typing - they allow you to type distances, formulas, equations/expressions, and etc! They are also used for punctuation, like !, ., the comma(,), ?, /, and etc.</p>
+            <h2>Numbers</h2>
+            <p>The row above the top row is the numbers row.</p>
+            <img src="https://i.ytimg.com/vi/-3wy8r-KLys/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA9aV5HNMm2OYZQpXo6vJhEAqIl3A">
+            <p>Fingering of the numbers row goes like this:</p>
+            <ul>
+              <li>Left pinky: 1</li>
+              <li>Left ring finger: 2</li>
+              <li>Left middle finger: 3</li>
+              <li>Left index finger: 4 and 5</li>
+              <li>Right index finger: 6 and 7</li>
+              <li>Right middle finger: 8</li>
+              <li>Right ring finger: 9</li>
+              <li>Right pinky: 0</li>
+              <li>Both thumbs will always be on the space bar</li>
+            </ul>
+            <p>You can also type numbers from the keypad, if you have that.</p>
+            <img src="https://www.typinglounge.com/wp-content/uploads/2018/08/number-pad-10-keys.jpg">
+            <br><br>
+            <p>Practice!</p>
+            <code>35 21 5 3 11 006 796 86 8 996 687 5 676 9 99 13 1 12 2 5</code>
+            <br><br>
+            <input type="text" onpaste="return false;" ondrop="return false;" autocomplete="off">
+            <p class="result"></p>
+            <br><br>
+            <h2>Symbols</h2>
+            <p>Symbols are usually part of letter rows and number rows.</p>
+            <img src="https://www.thoughtco.com/thmb/k38w0aAaZPZieD70kJnrC3pKW3g=/1500x1000/filters:fill(auto,1)/common-keyboard-symbols-1078337-e6f71db663d14fb98faf74024b417d20.gif">
+            <br>
+            <small>These are only a few symbols on the typing keyboard.</small>
+            <p>This is the fingering of the symbols IN THE NUMBERS ROW:</p>
+            <ul>
+              <li>Left pinky: !</li>
+              <li>Left ring finger: @</li>
+              <li>Left middle finger: #</li>
+              <li>Left index finger: $ and %</li>
+              <li>Right index finger: ^ and &</li>
+              <li>Right middle finger: *</li>
+              <li>Right ring finger: (</li>
+              <li>Right pinky: ), -, _, =, and +</li>
+              <li>Both thumbs will always be on the space bar</li>
+            </ul>
+            <br>
+            <p>This is the fingering of the symbols IN THE LETTERS ROW</p>
+            <ul>
+              <li>Right middle finger: <</li>
+              <li>Right ring finger: ></li>
+              <li>Right pinky: /, [, ], {, }</li>
+              <li>Both thumbs will always be on the space bar</li>
+            </ul>
+            <br><br>
+            <p>Practice!</p>
+            <code>} } [ <}} > [[ {= /</code>
+            <br><br>
+            <input type="text" onpaste="return false;" ondrop="return false;" autocomplete="off">
+            <p class="result"></p>
+            <br><br>
+            <p>Now, combining everything you learned so far!</p>
+            <code>kj* 4#5( i)^ ,n_+ )-l& @=_i }/< ]nl/ /j p(2wv d/7c{ >[[ 8u6> m[[ 8!]> (r t8zk #pz 4n&! %&(d</code>
+            <br><br>
+            <input type="text" onpaste="return false;" ondrop="return false;" autocomplete="off">
+            <p class="result"></p>
+            <br><br>
+          </div>
+          <br><br>
+        </div>
+        <!--Modifier keys-->
+        <div class="learn-section">
+          <div class="current-lesson-num"></div>
+          <div class="actual-lesson">
+            <h1>Modifier keys</h1>
+            <p>Here's the lesson about modifier keys, e.g. Caps Lock/Num Lock, Shift key, Ctrl key, Alt/Option key, etc.</p>
+            <img src="https://colemakmods.github.io/ergonomic-mods/gfx/modifiers/modifiers_default.png">
+            <p>You mostly type with modifier keys when you're pressing another key at the same time, because these keys do nothing while pressed alone. They are also mostly pressed with your pinkies (depending on which side the key is, the corresponding pinky types that) because pinkies are the closest fingers to modifiers.</p>
+            <p>Here are some of the functions:</p>
+            <ul>
+              <li>Caps Lock: Types any letter in caps</li>
+              <li>Num Lock: Turns some parts of the keyboard numeric</li>
+              <li>Shift: Turns a letter/symbol to its uppercase</li>
+              <li>Ctrl: used for controls in editors and computers</li>
+              <li>Alt/option: it is also mostly for controls</li>
+              <li>Esc: Escapes out of text editor so you can't type there anymore</li>
+            </ul>
+            <br>
+            <small>Note: These are only a few modifier keys</small>
+            <br>
+            <p>And now, practice time</p>
+            <code>KLI* qpz 4#5(Pi)? ,=l&) @=_i (r t8\>zK #Pz|; " <4'n&! %&(DP): {/</code>
+            <br><br>
+            <input type="text" onpaste="return false;" ondrop="return false;" autocomplete="off">
+            <p class="result"></p>
+            <br><br>
+          </div>
+          <br><br>
+        </div>
+        <!--Other keys-->
+        <div class="learn-section">
+          <div class="current-lesson-num"></div>
+          <div class="actual-lesson">
+            <h1>Other keys</h1>
+            <p>There are other parts of the keyboard too. For example, the ` key, which is used in typing sometimes, the Tab key (which is like space but it indents your text, for formal essays and writing), the Backspace/Delete key, which is used to remove the most recent character typed, and Enter, which is used to create a new line within typing editors. There are more, of course.</p>
+            <h2>There's no practice for this, because these keys are either too less used or too commonly used that you probably already know how to use them!</h2>
+          </div>
+          <br><br>
+        </div>
+        <!--Summary-->
+        <div class="learn-section">
+          <div class="current-lesson-num"></div>
+          <div class="actual-lesson">
+            <h1>Summary</h1>
+            <p>Now that you've learned pretty much the entire keyboard, put together what you've learned in this final practice!</p>
+            <code>grF ocfM sQe2 Gs{q wX7D cm.X :a-n Umi d5;tV cSz poDd '.p :wuf, Wp:$f q}Nc gdWJ slz ,5h kcw7 Hj lKu Xo,!" ngx Kas0 pnd2 Kieqd poEI vw .(u ?8) o.c bh tyX gtFA bue XUku 9sj9 x"9t b2Nx mpwoC</code>
+            <br><br>
+            <input type="text" onpaste="return false;" ondrop="return false;" autocomplete="off">
+            <p class="result"></p>
+            <br><br>
+          </div>
+          <br><br>
+        </div>
+        <!--Outro-->
+        <div class="learn-section">
+          <div class="current-lesson-num"></div>
+          <div class="actual-lesson">
+            <h1>Outro</h1>
+            <p>Now that you've expolored the entire keyboard, you can type proficiently - fast and accurate.</p>
+            <p>That isn't the full picture, though. You only learned the parts of the typing keyboard, and how to type with them like a PRO. Now, you need to be prepared for the real world, where you'll have to type essays and paragraphs (which are actually organized) with good speed and not a lot of errors. That, you can do with our practice page (go Home -> Practice Typing).</p>
+            <p>Even that isn't the end, though. You can get even better at typing if you keep on practicing and practicing. Someday, you'll become really good and become a REAL TypePro!</p>
+          </div>
+          <br><br>
+        </div>
+        <a id="prev" onclick="changeLesson(-1)">&#10094;</a>
+        <a id="next" onclick="changeLesson(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align: center" id="dots-container">
+        <span class="dot" onclick="changeLessonTo(1)" title="Intro lesson"></span>
+        <span class="dot" onclick="changeLessonTo(2)" title="Space Bar lesson"></span>
+        <span class="dot" onclick="changeLessonTo(3)" title="Home row lesson"></span>
+        <span class="dot" onclick="changeLessonTo(4)" title="Top row lesson"></span>
+        <span class="dot" onclick="changeLessonTo(5)" title="Bottom row lesson"></span>
+        <span class="dot" onclick="changeLessonTo(6)" title="All rows lesson"></span>
+        <span class="dot" onclick="changeLessonTo(7)" title="Numbers/symbols lesson"></span>
+        <span class="dot" onclick="changeLessonTo(8)" title="Modifier keys lesson"></span>
+        <span class="dot" onclick="changeLessonTo(9)" title="Other keys lesson"></span>
+        <span class="dot" onclick="changeLessonTo(10)" title="Summary"></span>
+        <span class="dot" onclick="changeLessonTo(11)" title="Outro lesson"></span>
+      </div>
+    </main>
+  </body>
+  <script src="learn_typing.js"></script>
+</html>

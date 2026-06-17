@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Practice Typing - TypePro</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link href="practice_typing.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <!--Header-->
+    <header id="header">
+      <span class="material-icons" onclick="window.location.href = 'index.html';">home</span>
+      <h3>Practice Typing</h3>
+    </header>
+    <!--Asking the user to switch to laptop if they are detected to be on mobile/tablet-->
+    <div id="warning-modal">
+      <div id="modal-content">
+        <div id="modal-header">
+          <h2>WOAH! HOLD UP</h2>
+        </div>
+        <div class="modal-body">
+          <p>We've detected that you're on a phone/tablet... we kindly ask you to switch to a laptop/computer as you can learn and type properly there.</p>
+        </div>
+        <div id="modal-footer">
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+    <!--Content-->
+    <div id="dark-theme-btn">
+      <span class="material-icons" onclick="toggleDarkTheme();">dark_mode</span>
+    </div>
+    <main>
+      <!--Typing simulator-->
+      <div id="typing-practice-simulator"></div>
+      <hr style="height: 0.2vh; background-color: gray;">
+      <div id="practice-instructions">
+        <p>This is a practice text for you to type to get better and better! Type it all the way to the end, and then you'll see your results!</p>
+        Start typing
+      </div>
+      <!--Results-->
+      <div id="practice-results-container">
+        <div id="practice-results">
+          <div id="body">
+            <p id="speed"></p>
+            <p id="accuracy"></p>
+            <p id="duration"></p>
+            <p id="num-of-characters"></p>
+          </div>
+          <div id="buttons">
+            <span id="go-home" onclick="window.location.href = 'index.html';">Go Home</span>
+            <span id="do-another-practice" onclick="location.reload();">Do another practice</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="practice_typing.js"></script>
+</html>

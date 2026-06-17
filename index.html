@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home - TypePro</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link href="home.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body onload="document.getElementById('welcome').className = 'show'; setTimeout(() => { document.getElementById('welcome').classList.remove('show')}, 5000);">
+    <!--Header-->
+    <header id="header">
+      <span id="menu-icon-open" class="material-icons" onclick="openMenu();">menu</span>
+      <h1 onclick="window.location.href = 'index.html';">TypePro</h1>
+    </header>
+    <!--Content-->
+    <!--Asking the user to switch to laptop if they are detected to be on mobile/tablet-->
+    <div id="warning-modal">
+      <div id="modal-content">
+        <div id="modal-header">
+          <h2>WOAH! HOLD UP</h2>
+        </div>
+        <div class="modal-body">
+          <p>We've detected that you're on a phone/tablet... we kindly ask you to switch to a laptop/computer as you can learn and type properly there.</p>
+        </div>
+        <div id="modal-footer">
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+
+    <!--Menu-->
+    <div id="menu">
+      <span id="menu-icon-close" class="material-icons" onclick="closeMenu();">menu</span>
+      <a href="index.html"><span class="material-icons">home</span> Home</a>
+      <a href="learn_typing.html"><span class="material-icons">school</span> Learn Typing</a>
+      <a href="practice_typing.html"><span class="material-icons">text_fields</span> Practice Typing</a>
+      <a href="test_typing.html"><span class="material-icons">quiz</span> Test your Typing Skills</a>
+    </div>
+    <div id="welcome">Welcome!</div>
+    <div id="dark-theme-btn">
+      <span class="material-icons" onclick="toggleDarkTheme();">dark_mode</span>
+    </div>
+
+    <!--The main stuff-->
+    <main>
+      <h1 id="what-do-you-want-to-do-today">
+        What do you want to do today?
+      </h1>
+      <section id="learn-typing">
+        <div class="text-container">
+          <h2 onclick="window.location.href = 'learn_typing.html'">Learn Typing</h2>
+        </div>
+        <img src="images/home_lt_section_bgimg.png">
+      </section>
+      <section id="practice-typing">
+        <img src="images/home_pt_section_bgimg.png">
+        <div class="text-container">
+          <h2 onclick="window.location.href = 'practice_typing.html';">Practice Typing</h2>
+        </div>
+      </section>
+      <section id="test-your-typing-skills">
+        <div class="text-container">
+          <h2 onclick="window.location.href = 'test_typing.html';">Test your typing skills</h2>
+        </div>
+        <img src="images/home_tt_section_bgimg.png">
+      </section>
+    </main>
+    <!--Footer-->
+    <footer id="footer">
+      <div id="info-container">
+        <img src="images/logo.png" alt="TypePro" id="logo">
+        <p id="info">TypePro is a typing website to help YOU improve your typing skills. Our content is the best you can find, and it's hard to get - that's why you came to us, right?</p>
+      </div>
+      <small id="copyright-claim"></small>
+    </footer>
+  </body>
+  <script src="home.js"></script>
+</html>

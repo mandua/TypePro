@@ -1,0 +1,222 @@
+* {
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body.dark-theme {
+  background-color: #141414;
+  color: white;
+}
+
+body.dark-theme #header {
+  background-color: black;
+}
+
+body.dark-theme #header span:hover {
+  color: darkgray;
+}
+
+body.dark-theme main #practice-results-container #practice-results {
+  background-color: #141414;
+}
+
+/* Header */
+#header {
+  background-color: #d3d3d3;
+  padding: 0.005vh;
+  font-size: 1.5vh;
+  margin: -10px -10px 1vh -10px;
+  text-align: center;
+}
+
+#header span {
+  margin: 1.5vh 0 0 2vh;
+  float: left;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#header span:hover {
+  color: white;
+}
+
+/* Content */
+#dark-theme-btn {
+  bottom: 2.5vh;
+  right: 3.5vh;
+  background-color: cornflowerblue;
+  position: fixed;
+  padding: 1vh 3vh 0.5vh 3vh;
+}
+
+#dark-theme-btn span {
+  font-size: 4vh;
+  cursor: pointer;
+  transition: 0.25s;
+  color: black;
+}
+
+#dark-theme-btn span:hover {
+  color: white;
+}
+
+#dark-theme-btn span.light {
+  color: white;
+}
+
+#dark-theme-btn span.light:hover {
+  color: black;
+}
+
+#warning-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 10vh;
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+#warning-modal #modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  margin-top: 15%;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#warning-modal #modal-content #modal-header {
+  padding: 0.2vh 1.6vh;
+  background-color: #b71f1f;
+  color: white;
+}
+
+#warning-modal #modal-content #modal-body {
+  padding: 0.2vh 1.6vh;
+}
+
+#warning-modal #modal-content #modal-footer {
+  padding: 0.2vh 1.6vh;
+  background-color: #b71f1f;
+  color: white;
+}
+
+main {
+  padding: 3.5vh;
+}
+
+main #typing-practice-simulator {
+  margin: 4vh 10% 8vh 10%;
+  padding: 2vh;
+  width: 80%;
+  border: 10px double #707070;
+  border-radius: 20px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+main #typing-practice-simulator span {
+  display: inline-block;
+  font-size: 3vh;
+  margin: 0.3vh;
+  padding: 0.5vh;
+  transition: 0.05s;
+}
+
+@keyframes border-animation {
+  0%, 100% {border-left: 2px solid black;}
+  50% {border-left: 2px solid rgba(0, 0, 0, 0);}
+}
+
+@keyframes border-animation-dark-theme {
+  0%, 100% {border-left: 2px solid white;}
+  50% {border-left: 2px solid rgba(0, 0, 0, 0);}
+}
+
+main #practice-instructions {
+  text-align: center;
+  margin-top: 8vh;
+  font-size: 5vh;
+}
+
+main #practice-instructions p {
+  font-size: 2vh;
+}
+
+main #practice-results-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 10%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+main #practice-results-container #practice-results {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  min-height: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation: come-in-from-top 0.4s;
+  text-align: center;
+}
+
+@keyframes come-in-from-top {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+main #practice-results-container #practice-results div#body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 65%;
+  margin-top: 7vh;
+}
+
+main #practice-results-container #practice-results div#body p {
+  flex: 25%;
+  font-size: 4vh;
+}
+
+main #practice-results-container #practice-results div#buttons {
+  text-align: center;
+}
+
+main #practice-results-container #practice-results div#buttons span {
+  display: inline-block;
+  background-color: #9c4e09;
+  padding: 2vh;
+  margin-right: 3vh;
+  font-size: 2vh;
+  border-radius: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+main #practice-results-container #practice-results div#buttons span:hover {
+  background-color: #f49e52;
+}
+
+main #practice-results-container #practice-results div#body, main #practice-results-container #practice-results div#buttons {
+  padding: 0.2vh 1.5vh;
+}
